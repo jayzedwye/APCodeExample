@@ -1,6 +1,7 @@
 function [coeff_RS, coeff_R, coeff_S, coeff_V, mdl_sest, mdl_rest, mdl_vest] = ...
         estimate_vsr(v, r_tilde, s, horizon_total)
 
+
     T = size(v, 1);
     r_cum = zeros(T, horizon_total);
     s_cum = zeros(T, horizon_total);
